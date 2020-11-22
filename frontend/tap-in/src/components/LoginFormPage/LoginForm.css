@@ -1,0 +1,28 @@
+
+.formContainer {
+    display: flex;
+    margin: auto auto;
+
+}
+.innerFormContainer {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 15%;
+
+}
+.passwordLabel {
+    display: flex;
+    color: black;
+    justify-content: space-between;
+}
+
+.passwordInput {
+    color: black;
+    margin-top: 3px;
+}
+.emailLabel {
+    display: flex;
+    color: black;
+    justify-content: space-between;
+}
