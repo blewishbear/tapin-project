@@ -1,0 +1,46 @@
+.page-wrapper {
+    background-image: url(https://www.porchdrinking.com/wp-content/uploads/2017/03/untappd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.nav-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 15px;
+
+}
+
+.nav-btn-link {
+    margin: 5px
+    /* display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-area: 'login signup';
+    justify-content: flex-end;
+    max-width: 1048px;
+    margin: 0 auto;
+    padding: 0 12px;
+    height: 52px;
+    position: relative; */
+}
+.btn {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 7px 10px;
+    line-height: 26px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+}

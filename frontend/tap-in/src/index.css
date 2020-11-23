@@ -1,4 +1,8 @@
 /* TODO Add site wide styles */
+/* body {
+    background-image: url(https://www.porchdrinking.com/wp-content/uploads/2017/03/untappd.jpg);
+} */
+
 button {
     color: white;
     background-color:#fc0;
@@ -8,7 +12,7 @@ button {
 
 
 }
-header {
+/* header {
     background-color: #fc0;
     color: white;
     position: fixed;
@@ -43,4 +47,4 @@ img {
     height: 36px;
     width: 36px;
     border-radius: 50px;
-}
+} */
