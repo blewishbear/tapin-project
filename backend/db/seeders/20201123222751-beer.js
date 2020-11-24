@@ -5,14 +5,34 @@ const { Brewery, User } = require("../models/index");
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-
+    const user1 = await User.findOne({
+      where: { username: 'Demo-lition'}
+    })
+    const user2 = await User.findOne({
+      where: { username: 'FakeUser1'}
+    })
+    const user3 = await User.findOne({
+      where: { username: 'FakeUser2'}
+    })
+    const brewery1 = await Brewery.findOne({
+      where: { name: "Witch's Brew"}
+    })
+    const brewery2 = await Brewery.findOne({
+      where: { name: "Brewed Up"}
+    })
+    const brewery3 = await Brewery.findOne({
+      where: { name: "What do you Drink?"}
+    })
+    const brewery4 = await Brewery.findOne({
+      where: { name: "The Shhmack"}
+    })
      await queryInterface.bulkInsert('Beers', [
        {
         name: 'HoppleDoodleDooo',
         style: 'IPA',
         description: "Super bomb, made with the freshest hops, and the best of care!",
-        userId: 1,
-        breweryId: 1,
+        userId: user1.id,
+        breweryId: brewery1.id,
         createdAt: new Date(),
         updatedAt: new Date()
 
@@ -21,8 +41,8 @@ module.exports = {
         name: 'Sierra Nevada',
         style: 'IPA',
         description: "Made with the hoppiest hops around",
-        userId: 2,
-        breweryId: 2,
+        userId: user2.id,
+        breweryId: brewery2.id,
         createdAt: new Date(),
         updatedAt: new Date()
 
@@ -31,18 +51,8 @@ module.exports = {
         name: 'CREAM',
         style: 'Stout',
         description: "Cash Rules Everything Around ME!",
-        userId: 3,
-        breweryId: 3,
-        createdAt: new Date(),
-        updatedAt: new Date()
-
-     },
-       {
-        name: 'Dos Equis',
-        style: 'Lager',
-        description: "Mexico's finest",
-        userId: 4,
-        breweryId: 4,
+        userId: user3.id,
+        breweryId: brewery3.id,
         createdAt: new Date(),
         updatedAt: new Date()
 
@@ -51,8 +61,8 @@ module.exports = {
         name: 'Corona',
         style: 'Lager',
         description: "Jalisco never made anything better!",
-        userId: 1,
-        breweryId: 1,
+        userId: user1.id,
+        breweryId: brewery1.id,
         createdAt: new Date(),
         updatedAt: new Date()
 
@@ -61,8 +71,8 @@ module.exports = {
         name: 'Fort George',
         style: 'Red Ale',
         description: "Made with the sweetest hops, i mean, its the best, like trump superlative best!",
-        userId: 2,
-        breweryId: 3,
+        userId: user2.id,
+        breweryId: brewery3.id,
         createdAt: new Date(),
         updatedAt: new Date()
 
