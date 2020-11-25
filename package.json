@@ -3,17 +3,32 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "js-cookie": "^2.2.1",
+    "react-redux": "^7.2.2",
+    "react-redux-router": "^0.0.14",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "heroku-postbuild": "npm run build --prefix frontend",
+    "install": "npm --prefix backend install backend && npm --prefix frontend install frontend",
+    "dev:backend": "npm install --prefix backend start",
+    "dev:frontend": "npm install --prefix frontend start",
+    "sequelize": "npm run --prefix backend sequelize",
+    "sequelize-cli": "npm run --prefix backend sequelize-cli",
+    "start": "npm start --prefix backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blewishbear/tapin-project.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "js-cookie": "^2.2.1",
-    "react-redux": "^7.2.2",
-    "react-redux-router": "0.0.14",
-    "redux": "^4.0.5",
-    "redux-thunk": "^2.3.0"
-  }
+  "bugs": {
+    "url": "https://github.com/blewishbear/tapin-project/issues"
+  },
+  "homepage": "https://github.com/blewishbear/tapin-project#readme"
 }
